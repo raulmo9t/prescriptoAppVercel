@@ -67,12 +67,20 @@ const Navbar = () => {
             </div>
           </div>
         ) : (
-          <button
-            onClick={() => navigate("/login")}
-            className="bg-primary text-white px-8 py-3 rounded-full font-light hidden md:block"
-          >
-            Create account
-          </button>
+          <div className="flex items-center gap-3">
+            <a
+              href={"https://prescripto-app-admin-vercel.vercel.app/"}
+              className=""
+            >
+              Admin
+            </a>
+            <button
+              onClick={() => navigate("/login")}
+              className="bg-primary text-white px-8 py-3 rounded-full font-light hidden md:block"
+            >
+              Create account
+            </button>
+          </div>
         )}
         <img
           onClick={() => setShowMenu(true)}
